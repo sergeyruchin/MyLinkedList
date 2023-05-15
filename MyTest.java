@@ -6,5 +6,6 @@ public class MyTest {
         myLinkedList.add(4);
         myLinkedList.add(45);
         myLinkedList.add(12);
+        myLinkedList.add(1);
     }
 }
