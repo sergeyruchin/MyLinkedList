@@ -6,12 +6,12 @@ public class MyLinkedList {
         if (head == null) {
             this.head = new Node(value);
         } else {
-            Node tmp = head;
+            Node temp = head;
 
-            while (tmp.getNext() != null) {
-                tmp = tmp.getNext();
+            while (temp.getNext() != null) {
+                temp = temp.getNext();
             }
-            tmp.setNext(new Node(value));
+            temp.setNext(new Node(value));
         }
             size++;
     }
