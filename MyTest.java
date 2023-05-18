@@ -6,5 +6,7 @@ public class MyTest {
         myLinkedList.add(4);
         myLinkedList.add(45);
         myLinkedList.add(12);
+
+        System.out.println(myLinkedList.toString());
     }
 }

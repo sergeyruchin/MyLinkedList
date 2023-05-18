@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class MyLinkedList {
     private Node head;
     private int size;
@@ -14,6 +17,18 @@ public class MyLinkedList {
             temp.setNext(new Node(value));
         }
             size++;
+    }
+
+    @Override
+    public String toString() {
+        int[] result = new int[size];
+        Node tmp = this.head;
+        int idx = 0;
+        while (tmp != null) {
+            result[idx++] = tmp.getValue();
+            tmp = tmp.getNext();
+        }
+        return Arrays.toString(result);
     }
 
 
