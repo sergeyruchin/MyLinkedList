@@ -19,6 +19,20 @@ public class MyLinkedList {
             size++;
     }
 
+    public int get(int index) {
+        Node tmp = this.head;
+        int idx = 0;
+        while(tmp != null) {
+             if(idx == index)
+                 return tmp.getValue();
+             else {
+                 tmp = tmp.getNext();
+                 idx++;
+             }
+        }
+        throw new IllegalArgumentException();
+    }
+
     @Override
     public String toString() {
         int[] result = new int[size];
