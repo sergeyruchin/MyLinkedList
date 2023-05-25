@@ -8,7 +8,8 @@ public class MyTest {
         myLinkedList.add(12);
 
         System.out.println(myLinkedList.toString());
-
         System.out.println(myLinkedList.get(2));
+        myLinkedList.remove(2);
+        System.out.println(myLinkedList.toString());
     }
 }

@@ -33,6 +33,27 @@ public class MyLinkedList {
         throw new IllegalArgumentException();
     }
 
+    public void remove(int index) {
+        if (index == 0) {
+            head = head.getNext();
+            size--;
+            return;
+        }
+        int currentIndex = 0;
+        Node tmp = head;
+
+        while(tmp !=  null) {
+            if (currentIndex ==  index - 1) {
+                tmp.setNext(tmp.getNext().getNext());
+                size--;
+                return;
+            } else {
+                tmp = tmp.getNext();
+                currentIndex++;
+            }
+        }
+    }
+
     @Override
     public String toString() {
         int[] result = new int[size];
