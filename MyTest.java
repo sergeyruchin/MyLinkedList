@@ -7,8 +7,17 @@ public class MyTest {
         myLinkedList.add(45);
         myLinkedList.add(12);
 
-        System.out.println(myLinkedList.toString());
-
+        System.out.println(myLinkedList);
+        System.out.println("//=//=//=//=//=//=//=//=//=//=//=//=");
         System.out.println(myLinkedList.get(2));
+        myLinkedList.set(0, 555);
+        System.out.println(myLinkedList);
+        System.out.println("//=//=//=//=//=//=//=//=//=//=//=//=");
+        System.out.println(myLinkedList.getSize());
+        myLinkedList.set(4, 999);
+        System.out.println(myLinkedList);
+
+
+
     }
 }
